@@ -19,6 +19,6 @@ export const appConfig: ApplicationConfig = {
       provideStorage(() => getStorage()),
       provideMessaging(() => getMessaging())
     ),
-    provideRouter(routes)
+    provideRouter(routes), provideFirebaseApp(() => initializeApp({"projectId":"tunturu-2b497","appId":"1:658070131735:web:c18a47ffb04e88cfbe3852","storageBucket":"tunturu-2b497.appspot.com","locationId":"us-central","apiKey":"AIzaSyCFEfwZB9qGxlL8IhLZF_I2VU6UxQmg--U","authDomain":"tunturu-2b497.firebaseapp.com","messagingSenderId":"658070131735","measurementId":"G-796VSYSGH7"})), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideMessaging(() => getMessaging()), provideStorage(() => getStorage())
   ],
 };
